@@ -166,7 +166,7 @@ const Hero = () => {
             {/* Floating projects badge */}
             <div className="absolute -right-4 bottom-16 hidden items-center gap-3 rounded-2xl border border-slate-200 bg-white/95 px-3.5 py-2.5 shadow-xl backdrop-blur-md sm:flex">
               <span className="flex h-9 w-9 items-center justify-center rounded-lg bg-teal-100 text-sm font-bold text-teal-700">
-                3
+                4
               </span>
               <div>
                 <p className="text-xs font-bold text-slate-900">
