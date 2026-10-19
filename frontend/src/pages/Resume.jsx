@@ -204,7 +204,7 @@ const Resume = () => {
             {/* Identity */}
             <div className="text-center">
               <img
-                src="/nilima.svg"
+                src={`${import.meta.env.BASE_URL}nilima.svg`}
                 alt="Profile photo"
                 className="mx-auto h-28 w-28 rounded-2xl object-cover ring-2 ring-teal-400/70 ring-offset-2 ring-offset-slate-900 print:h-24 print:w-24"
               />

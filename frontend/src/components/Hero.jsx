@@ -131,7 +131,7 @@ const Hero = () => {
             <div className="relative rounded-[1.9rem] bg-gradient-to-br from-teal-500 via-emerald-500 to-emerald-700 p-[3px] shadow-2xl shadow-teal-900/20">
               <div className="overflow-hidden rounded-[1.75rem] bg-slate-900">
                 <img
-                  src="/nilima.svg"
+                  src={`${import.meta.env.BASE_URL}nilima.svg`}
                   alt="Profile photo"
                   className="h-[22rem] w-full object-cover object-top sm:h-[26rem]"
                 />

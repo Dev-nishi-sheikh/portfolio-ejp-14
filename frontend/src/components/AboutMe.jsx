@@ -57,7 +57,7 @@ const AboutMe = () => {
 
             <div className="flex items-center gap-4 mb-6 pb-6 border-b border-gray-100">
               <img
-                src="/nilima.svg"
+                src={`${import.meta.env.BASE_URL}nilima.svg`}
                 alt="Nilima Shekh Nishi"
                 className="h-16 w-16 shrink-0 rounded-2xl object-cover object-top ring-2 ring-teal-500/30"
               />

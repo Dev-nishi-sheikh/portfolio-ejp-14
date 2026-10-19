@@ -30,3 +30,6 @@ Thumbs.db
 
 # Nested standalone project repos (kept separate, not part of this repo)
 frontend/src/projects/
+
+# Vercel
+.vercel
