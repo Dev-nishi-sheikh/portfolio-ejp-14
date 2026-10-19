@@ -25,7 +25,7 @@ const Footer = () => {
               </span>
             </Link>
             <p className="text-sm text-gray-500 max-w-md leading-relaxed">
-              Frontend developer from Dhaka building clean, responsive and
+              Frontend developer from Rangpur building clean, responsive and
               user-centric web applications with React, Next.js and Tailwind CSS
               &mdash; currently leveling up on the backend with Node.js, Express
               and MongoDB.

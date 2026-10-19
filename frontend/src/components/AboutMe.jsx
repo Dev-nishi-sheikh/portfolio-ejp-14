@@ -7,7 +7,7 @@ import {
   HiOutlineBriefcase,
   HiOutlineCheckCircle,
 } from "react-icons/hi";
-import { FaLaptopCode, FaRocket } from "react-icons/fa";
+import { FaLaptopCode, FaRocket, FaFutbol, FaPalette, FaBook, FaPlane } from "react-icons/fa";
 
 const AboutMe = () => {
   const highlights = [
@@ -26,6 +26,33 @@ const AboutMe = () => {
     {
       title: "Problem Solver",
       desc: "Passionate about debugging, analytical thinking, and optimizing UX.",
+    },
+  ];
+
+  const hobbies = [
+    {
+      icon: FaFutbol,
+      title: "Sports & Badminton",
+      desc: "Playing badminton and cricket with friends to stay active and fresh.",
+      color: "text-emerald-500",
+    },
+    {
+      icon: FaPalette,
+      title: "Sketching & Art",
+      desc: "Doodling UI ideas on paper \u2014 where many of my layouts start.",
+      color: "text-pink-500",
+    },
+    {
+      icon: FaBook,
+      title: "Reading & Learning",
+      desc: "Following tech blogs, docs and tutorials to learn something new daily.",
+      color: "text-amber-500",
+    },
+    {
+      icon: FaPlane,
+      title: "Travelling",
+      desc: "Exploring new places, food and cultures whenever I get the chance.",
+      color: "text-sky-500",
     },
   ];
 
@@ -70,7 +97,7 @@ const AboutMe = () => {
                 </p>
                 <div className="flex items-center gap-1.5 text-xs text-gray-500 mt-1">
                   <HiOutlineLocationMarker className="text-gray-400" />
-                  <span>Dhaka, Bangladesh</span>
+                  <span>Rangpur, Bangladesh</span>
                 </div>
               </div>
             </div>
@@ -104,7 +131,7 @@ const AboutMe = () => {
             {/* Micro Stats */}
             <div className="grid grid-cols-3 gap-3 pt-6 mt-6 border-t border-gray-100 text-center">
               <div className="p-2.5 bg-gray-50 rounded-xl">
-                <span className="block text-2xl font-black text-teal-600">2</span>
+                <span className="block text-2xl font-black text-teal-600">3</span>
                 <span className="text-[11px] text-gray-500 font-medium">Demo Projects</span>
               </div>
               <div className="p-2.5 bg-gray-50 rounded-xl">
@@ -127,7 +154,7 @@ const AboutMe = () => {
             </h3>
             <p>
               I am an aspiring, self-driven <strong>frontend developer</strong>{" "}
-              from Dhaka, currently pursuing a{" "}
+              from Rangpur, currently pursuing a{" "}
               <strong>Diploma in Computer Science &amp; Technology (CST)</strong>{" "}
               and focused on modern web technologies. My journey started with
               basic HTML &amp; CSS, then quickly grew into building dynamic,
@@ -180,6 +207,39 @@ const AboutMe = () => {
               <span>Let's Work Together</span>
             </a>
           </div>
+        </div>
+      </div>
+
+      {/* Beyond the Code — hobbies & interests outside programming */}
+      <div className="mt-16">
+        <div className="text-center max-w-3xl mx-auto mb-8 space-y-2">
+          <h3 className="text-2xl sm:text-3xl font-extrabold text-gray-900 tracking-tight">
+            Beyond the{" "}
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-teal-600 to-emerald-600">
+              Code
+            </span>
+          </h3>
+          <p className="text-sm sm:text-base text-gray-600">
+            Away from the keyboard I am a curious, hands-on person &mdash; here is
+            what keeps me inspired.
+          </p>
+        </div>
+
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+          {hobbies.map(({ icon: Icon, title, desc, color }) => (
+            <div
+              key={title}
+              className="p-5 rounded-2xl bg-white border border-gray-200/80 shadow-xs hover:shadow-md hover:border-teal-200 transition-all duration-300 text-center"
+            >
+              <span
+                className={`mx-auto mb-3 flex h-12 w-12 items-center justify-center rounded-xl bg-gray-50 text-2xl ${color}`}
+              >
+                <Icon />
+              </span>
+              <h4 className="text-sm font-bold text-gray-900">{title}</h4>
+              <p className="text-xs text-gray-500 mt-1 leading-relaxed">{desc}</p>
+            </div>
+          ))}
         </div>
       </div>
     </section>

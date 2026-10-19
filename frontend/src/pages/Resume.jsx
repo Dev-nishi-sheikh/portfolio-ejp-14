@@ -32,7 +32,7 @@ import {
 const contact = {
   email: "nishishekh04@gmail.com",
   phone: "+880 1700-000000",
-  location: "Dhaka, Bangladesh",
+  location: "Rangpur, Bangladesh",
   github: "https://github.com/Dev-nishi-sheikh",
   linkedin: "https://www.linkedin.com/in/nishi-shekh-683058421",
 };

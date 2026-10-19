@@ -6,7 +6,7 @@ import {
   HiOutlineChatAlt2,
   HiOutlineCheckCircle,
 } from "react-icons/hi";
-import { FaGithub, FaLinkedin, FaTwitter, FaPaperPlane } from "react-icons/fa";
+import { FaGithub, FaLinkedin, FaWhatsapp, FaPaperPlane } from "react-icons/fa";
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -158,6 +158,15 @@ const Contact = () => {
                   className="w-10 h-10 rounded-xl bg-gray-100 hover:bg-teal-600 hover:text-white flex items-center justify-center text-gray-700 transition"
                 >
                   <FaLinkedin className="text-lg" />
+                </a>
+                <a
+                  href="https://wa.me/8801700000000"
+                  target="_blank"
+                  rel="noreferrer"
+                  aria-label="Chat on WhatsApp"
+                  className="w-10 h-10 rounded-xl bg-gray-100 hover:bg-green-500 hover:text-white flex items-center justify-center text-gray-700 transition"
+                >
+                  <FaWhatsapp className="text-lg" />
                 </a>
                
               </div>

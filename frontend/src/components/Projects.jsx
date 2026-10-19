@@ -26,7 +26,7 @@ const Projects = () => {
       </div>
 
       {/* Projects Grid */}
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         {projects.map((project) => (
           <div
             key={project.id}
@@ -126,7 +126,7 @@ const Projects = () => {
         <p className="text-sm text-gray-500">
           Want to see more code and experiments? Check out my{" "}
           <a
-            href="https://github.com/"
+            href="https://github.com/Dev-nishi-sheikh"
             target="_blank"
             rel="noreferrer"
             className="font-semibold text-teal-600 hover:underline inline-flex items-center gap-1"
