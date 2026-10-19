@@ -131,7 +131,7 @@ const AboutMe = () => {
             {/* Micro Stats */}
             <div className="grid grid-cols-3 gap-3 pt-6 mt-6 border-t border-gray-100 text-center">
               <div className="p-2.5 bg-gray-50 rounded-xl">
-                <span className="block text-2xl font-black text-teal-600">4</span>
+                <span className="block text-2xl font-black text-teal-600">3</span>
                 <span className="text-[11px] text-gray-500 font-medium">Demo Projects</span>
               </div>
               <div className="p-2.5 bg-gray-50 rounded-xl">

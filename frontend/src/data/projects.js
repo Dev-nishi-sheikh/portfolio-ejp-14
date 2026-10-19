@@ -1,7 +1,6 @@
 import devcon from "../assets/projects/Devcon.png";
 import fitlog from "../assets/projects/fitlog.png";
 import banglaNews from "../assets/projects/bangla-news-24.png";
-import portfolio from "../assets/projects/portfolio.svg";
 
 const projects = [
   {
@@ -61,7 +60,7 @@ const projects = [
     ],
     description:
       "A full-stack Bangla news portal built with Next.js 16 (App Router) and TypeScript. It pulls live headlines from a news API and renders a breaking-news marquee, a lead-story hero, category-wise sections and a 'most read' list. Readers can browse categories and open full article pages, and can sign up / sign in with email and password (better-auth + MongoDB) to personalise their reading experience.",
-    live: "",
+    live: "https://bangla-news-24.vercel.app/",
     github: "https://github.com/Dev-nishi-sheikh/bangla-news-24",
     challenges: [
       "Rendering live third-party news data with Next.js server components and handling loading and empty states",
@@ -74,29 +73,6 @@ const projects = [
       "Full-text search across articles and categories",
       "Comments and reactions on articles",
       "An editor CMS dashboard to publish and manage articles",
-    ],
-  },
-  {
-    id: 4,
-    title: "Personal Portfolio — Nilima.dev",
-    image: portfolio,
-    category: "Personal Portfolio Website",
-    technologies: ["React 19", "Vite", "Tailwind CSS v4", "React Router", "JavaScript (ES6+)"],
-    description:
-      "A modern, fully responsive personal portfolio that brings my skills, projects, education and resume together in a single-page experience. Built from scratch with React 19, Vite and Tailwind CSS v4, it features reusable components, client-side routing, a filterable skills section, a detailed project case-study page and a print-friendly resume that can be saved as a PDF. Deployed on Vercel with automatic redeploys from GitHub.",
-    live: "https://portfolio-ejp-14.vercel.app/",
-    github: "https://github.com/Dev-nishi-sheikh/portfolio-ejp-14",
-    challenges: [
-      "Designing a reusable component architecture and keeping the visual language consistent across every section",
-      "Making each section fully responsive, from small phones up to large desktops",
-      "Configuring the correct Vite base path so the same build works on both Vercel and GitHub Pages",
-      "Building a clean, print-friendly resume page that can be saved as a PDF",
-    ],
-    future: [
-      "Adding a real backend (Node.js + Express + MongoDB) so the contact form sends emails",
-      "A blog section to share what I learn while growing into full-stack development",
-      "Dark-mode toggle and subtle scroll animations",
-      "One-click resume download generated as a PDF",
     ],
   },
 ];
