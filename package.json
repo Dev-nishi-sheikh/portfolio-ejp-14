@@ -1,0 +1,22 @@
+{
+  "name": "practice-portfolio-ejp-14",
+  "version": "1.0.0",
+  "description": "A modern, responsive personal developer portfolio web application built with **React 19**, **Vite**, and **Tailwind CSS v4**.",
+  "main": "index.js",
+  "scripts": {
+    
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Pullock4981/practice-portfolio-ejp-14.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/Pullock4981/practice-portfolio-ejp-14/issues"
+  },
+  "homepage": "https://github.com/Pullock4981/practice-portfolio-ejp-14#readme"
+}

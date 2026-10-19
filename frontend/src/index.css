@@ -1,0 +1,83 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Plus Jakarta Sans", ui-sans-serif, system-ui, -apple-system,
+    "Segoe UI", Roboto, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, Consolas,
+    monospace;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    /* keeps anchored sections clear of the fixed navbar */
+    scroll-padding-top: 5.5rem;
+  }
+
+  body {
+    font-family: var(--font-sans);
+  }
+}
+
+/* ------------------------------------------------------------------
+   Print / "Save as PDF" tuning (used by the resume page)
+   ------------------------------------------------------------------ */
+@media print {
+  @page {
+    size: A4;
+    margin: 10mm;
+  }
+
+  html,
+  body {
+    background: #ffffff !important;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+
+  html {
+    /* Scales the whole rem based resume sheet down uniformly for print */
+    font-size: 12px;
+  }
+
+  .resume-sheet {
+    max-width: 100% !important;
+  }
+
+  /* Never slice a card / sidebar block in half across page breaks */
+  .resume-sheet section,
+  .resume-sheet article,
+  .resume-sidebar > div {
+    break-inside: avoid;
+  }
+
+  /* The resume sidebar is dark on screen, light ink-free on paper */
+  .resume-sidebar {
+    background-color: #f8fafc !important;
+    color: #475569 !important;
+  }
+
+  .resume-sidebar * {
+    color: inherit !important;
+  }
+
+  .resume-sidebar h1,
+  .resume-sidebar h2,
+  .resume-sidebar h3,
+  .resume-sidebar .resume-strong {
+    color: #0f172a !important;
+  }
+
+  .resume-sidebar .resume-accent {
+    color: #0d9488 !important;
+  }
+
+  .resume-sidebar .resume-chip {
+    background-color: #ffffff !important;
+    box-shadow: inset 0 0 0 1px #e2e8f0;
+  }
+
+  .resume-sidebar .resume-bar-track {
+    background-color: #e2e8f0 !important;
+  }
+}
