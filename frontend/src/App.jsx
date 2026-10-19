@@ -26,9 +26,12 @@ function Layout() {
   );
 }
 
+// BASE_URL is "/" locally and "/<repo-name>/" on GitHub Pages (see vite.config.js)
+const basename = import.meta.env.BASE_URL.replace(/\/$/, '') || '/';
+
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename={basename}>
       <Layout />
     </BrowserRouter>
   );
