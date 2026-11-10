@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { HiDocumentText, HiArrowRight, HiSparkles } from "react-icons/hi";
+import { HiDocumentText, HiArrowRight, HiArrowDown, HiSparkles } from "react-icons/hi";
 import {
   FaReact,
   FaHtml5,
@@ -92,6 +92,16 @@ const Hero = () => {
               <span>View Resume / CV</span>
             </Link>
 
+            {/* Download Resume PDF */}
+            <a
+              href={`${import.meta.env.BASE_URL}MstMain.pdf`}
+              download="MstMain.pdf"
+              className="inline-flex items-center justify-center gap-2.5 border border-slate-300 bg-white text-slate-800 hover:bg-slate-50 hover:border-teal-500 hover:text-teal-600 px-7 py-3.5 rounded-xl font-bold shadow-sm hover:shadow-md transition-all duration-300 cursor-pointer text-sm sm:text-base"
+            >
+              <HiArrowDown className="text-xl" />
+              <span>Download Resume (PDF)</span>
+            </a>
+
             {/* Explore Projects Button */}
             <a
               href="#projects"
@@ -166,7 +176,7 @@ const Hero = () => {
             {/* Floating projects badge */}
             <div className="absolute -right-4 bottom-16 hidden items-center gap-3 rounded-2xl border border-slate-200 bg-white/95 px-3.5 py-2.5 shadow-xl backdrop-blur-md sm:flex">
               <span className="flex h-9 w-9 items-center justify-center rounded-lg bg-teal-100 text-sm font-bold text-teal-700">
-                3
+                2
               </span>
               <div>
                 <p className="text-xs font-bold text-slate-900">

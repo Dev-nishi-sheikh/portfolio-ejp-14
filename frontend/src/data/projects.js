@@ -1,29 +1,7 @@
-import devcon from "../assets/projects/Devcon.png";
 import fitlog from "../assets/projects/fitlog.png";
 import banglaNews from "../assets/projects/bangla-news-24.png";
 
 const projects = [
-  {
-    id: 1,
-    title: "Devcon 2026 — Developer Conference",
-    image: devcon,
-    category: "Event Landing Page",
-    technologies: ["HTML5", "CSS3"],
-    description:
-      "A dark, high-impact landing page for DEVCOM 2026 — a three-day developer conference for 4,000+ engineers, founders and builders. Hand-coded with semantic HTML and modern CSS, it features a bold typographic hero, a sticky navbar with a Register Now call-to-action, and fully responsive speakers, schedule, tracks and venue sections.",
-    live: "https://dev-nishi-sheikh.github.io/Assignment-01/",
-    github: "https://github.com/Dev-nishi-sheikh/Assignment-01",
-    challenges: [
-      "Keeping the oversized hero type bold but never overflowing on small screens",
-      "Building a sticky navbar that stays readable on top of the dark hero image",
-      "Structuring the speakers, schedule and tracks sections with CSS Flexbox/Grid so they stay scannable on mobile",
-    ],
-    future: [
-      "Real ticket registration with payment gateway integration",
-      "Speaker detail pages and a personal agenda builder saved to localStorage",
-      "Live countdown timer and schedule updates during the event",
-    ],
-  },
   {
     id: 2,
     title: "Fitlog — Workout Tracking App",

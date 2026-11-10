@@ -9,6 +9,7 @@ import {
   HiExternalLink,
   HiArrowUp,
   HiArrowRight,
+  HiArrowDown,
   HiCode,
   HiOutlineAcademicCap,
   HiOutlineBadgeCheck,
@@ -193,6 +194,15 @@ const Resume = () => {
             <HiPrinter className="text-base" />
             Print / Save as PDF
           </button>
+
+          <a
+            href={`${import.meta.env.BASE_URL}MstMain.pdf`}
+            download="MstMain.pdf"
+            className="inline-flex cursor-pointer items-center gap-2 rounded-xl border border-slate-300 bg-white px-5 py-2.5 text-sm font-bold text-slate-700 shadow-sm hover:bg-slate-50 hover:border-teal-500 hover:text-teal-600 transition"
+          >
+            <HiArrowDown className="text-base" />
+            Download PDF
+          </a>
         </div>
       </div>
 
